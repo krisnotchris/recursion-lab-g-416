@@ -17,6 +17,10 @@ function reverseString(myString) {
   }
 }
 
+function isPalindrome() {
+  
+}
+
 function addUpTo(array, index) {
 if (index === 0) {
     return array[index];
