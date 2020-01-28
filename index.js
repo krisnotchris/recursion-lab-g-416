@@ -17,11 +17,12 @@ function reverseString(myString) {
   }
 }
 
-function isPalindrome(str) {
-  if (str === "") {
-    return "";
-  } else {
-    return isPalindrome(str.substr(1)) + str[0] === str;
+function isPalindrome(str){
+if (str[0] === str[str.length - 1] && str.length > 1) {
+    isPalindrome(str.substring(1, str.length -1)) 
+    return true
+  }else{
+    return false
   }
 }
 
