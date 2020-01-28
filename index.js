@@ -17,8 +17,14 @@ function reverseString(myString) {
   }
 }
 
-function isPalindrome() {
-  
+function isPalindrome(str) {
+  let reversed;
+  if (str === "") {
+    return "";
+  } else {
+    reversed = isPalindrome(str.substr(1)) + str[0];
+  }
+  return reversed === str;
 }
 
 function addUpTo(array, index) {
