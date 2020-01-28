@@ -18,13 +18,11 @@ function reverseString(myString) {
 }
 
 function isPalindrome(str) {
-  let reversed;
   if (str === "") {
     return "";
   } else {
-    reversed = isPalindrome(str.substr(1)) + str[0];
+    return isPalindrome(str.substr(1)) + str[0] === str;
   }
-  return reversed === str;
 }
 
 function addUpTo(array, index) {
